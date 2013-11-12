@@ -1,10 +1,10 @@
 [user]
-  name = Thomas Wiart                 # TODO: change this to your name
-  mail = thomas.wiart@applidget.com   # TODO: change this to your email
-  email = thomas.wiart@applidget.com  # TODO: change this to your email
+  name = Jose Delavega                # TODO: change this to your name
+  mail = yourmail@example.com         # TODO: change this to your email
+  email = yourmail@example.com        # TODO: change this to your email
 
 [github]
-  user = twiart                       # TODO: change this to your github username
+  user = el_diablo                    # TODO: change this to your github username
 
 [color]
   branch = auto
@@ -25,9 +25,6 @@
   st = status
   br = branch
   ci = commit
-  d  = difftool
-  fo = fetch origin
-  mom = merge origin master
 
   # http://www.jukie.net/bart/blog/pimping-out-git-log
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
