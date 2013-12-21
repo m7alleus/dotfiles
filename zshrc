@@ -9,8 +9,11 @@ ZSH_THEME="eastwood"
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
-# Comment this out to disable weekly auto-update checks
+# Uncomment this to disable bi-weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
+
+# Uncomment to change how often before auto-updates occur? (in days)
+export UPDATE_ZSH_DAYS=1
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
@@ -18,15 +21,15 @@ ZSH_THEME="eastwood"
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
-# Disable zsh correction
-unsetopt correct_all
+# Uncomment following line if you want to disable command autocorrection
+DISABLE_CORRECTION="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git osx ruby rails3 sublime zsh-syntax-highlighting zsh-history-substring-search)
+plugins=(git osx ruby rails sublime zsh-syntax-highlighting zsh-history-substring-search)
 
 # Gather handy aliases
 source $HOME/.aliases
@@ -37,9 +40,6 @@ export PATH=$PATH:~/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 ############# RBENV LINES #############
 
-# To use Homebrew's directories rather than ~/.rbenv add to your profile:
-# export RBENV_ROOT=/usr/local/var/rbenv >>>>>>>>>> UNCOMMENT HERE <<<<<<<<<<
-
 # To enable shims and autocompletion add to your profile:
 # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi >>>>>>>>>> UNCOMMENT HERE <<<<<<<<<<
 
@@ -48,3 +48,7 @@ export PATH=$PATH:~/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 # Reverse the ls function
 # function ls(){ /bin/ls "$@" | command rev; }
+
+# function matrix(){
+#   echo -e "\e[1;40m" ; clear ; while :; do echo $LINES $COLUMNS $(( $RANDOM % $COLUMNS)) $(( $RANDOM % 72 )) ;sleep 0.05; done|gawk '{ letters="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()"; c=$4; letter=substr(letters,c,1);a[$3]=0;for (x in a) {o=a[x];a[x]=a[x]+1; printf "\033[%s;%sH\033[2;32m%s",o,x,letter; printf "\033[%s;%sH\033[1;37m%s\033[0;0H",a[x],x,letter;if (a[x] >= $1) { a[x]=0; } }}'
+# }
