@@ -36,7 +36,7 @@ plugins=(git osx ruby rails sublime zsh-syntax-highlighting zsh-history-substrin
 source $HOME/.aliases
 source $ZSH/oh-my-zsh.sh
 
-# This PATH contains shims dir to enable rbenv
+# Customize to your needs...
 export PATH=$PATH:~/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 ############# RBENV LINES #############
