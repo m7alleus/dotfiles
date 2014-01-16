@@ -5,6 +5,7 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 alias zshconfig="subl ~/.zshrc"
 alias sourcezsh="source ~/.zshrc"
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
+alias pyserv="python -m SimpleHTTPServer"
 
 # Postgresql
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
