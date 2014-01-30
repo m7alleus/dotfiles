@@ -10,3 +10,8 @@ alias pyserv="python -m SimpleHTTPServer"
 # Postgresql
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+
+# PHP
+alias alogs='tail -F /Applications/MAMP/logs/apache_error.log |while read -r line;do printf "\033[38;5;%dm%s\033[0m\n" $(($RANDOM%255)) "$line";done'
+alias plogs='tail -F /Applications/MAMP/logs/php_error.log |while read -r line;do printf "\033[38;5;%dm%s\033[0m\n" $(($RANDOM%255)) "$line";done'
+alias mlogs='tail -F /Applications/MAMP/logs/mysql_error_log.err |while read -r line;do printf "\033[38;5;%dm%s\033[0m\n" $(($RANDOM%255)) "$line";done'
