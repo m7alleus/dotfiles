@@ -48,7 +48,7 @@ export PATH=$PATH:~/.rbenv/shims:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 # Display location of a shortlink
 # locate(){ curl -s -D - -o /dev/null $1  | grep -i ^location }
 
-# fliptable() { echo -e "\033[38;5;148m（╯°□°）╯ ┻━┻\033[39m"; }
+# flip() { echo -e "\033[38;5;148m（╯°□°）╯ ┻━┻\033[39m"; }
 
 # Reverse the ls function
 # ls(){ /bin/ls "$@" | command rev; }
