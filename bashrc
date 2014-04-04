@@ -10,7 +10,7 @@
  eval "`dircolors`"
  alias ls='ls $LS_OPTIONS'
  alias ll='ls $LS_OPTIONS -l'
- alias l='ls $LS_OPTIONS -lA'
+ alias la='ls $LS_OPTIONS -lA'
 #
 # Some more alias to avoid making mistakes:
  alias rm='rm -i'
@@ -26,10 +26,6 @@ fi
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
-
-alias st="git status "
-alias ci="git commit -am "
-alias tree="git log --graph --pretty=oneline --abbrev-commit --color"
 
 # enable bash completion in interactive shells
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
