@@ -10,9 +10,9 @@
  eval "`dircolors`"
  alias ls='ls $LS_OPTIONS'
  alias ll='ls $LS_OPTIONS -l'
- alias la='ls $LS_OPTIONS -lA'
-#
-# Some more alias to avoid making mistakes:
+ alias la='ls $LS_OPTIONS -la'
+
+ # Some more alias to avoid making mistakes:
  alias rm='rm -i'
  alias cp='cp -i'
  alias mv='mv -i'
@@ -27,8 +27,12 @@ fi
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
+# Log alias
+alias aelog='tail -F /var/log/apache2/error.log |while read -r line;do printf "\033[38;5;%dm%s\033[0m\n" $(($RANDOM%255)) "$line";done'
+alias aalog='tail -F /var/log/apache2/access.log |while read -r line;do printf "\033[38;5;%dm%s\033[0m\n" $(($RANDOM%255)) "$line";done'
+alias flog='sudo tail -f /var/log/fail2ban.log'
+
 # enable bash completion in interactive shells
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
-
