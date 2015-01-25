@@ -5,7 +5,7 @@
   "color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
   "theme": "Spacegray.sublime-theme",
 	"detect_indentation": false,
-	"drawWhiteSpace": true,
+	"draw_white_space": true,
 	"file_exclude_patterns":
 	[
 		"*.pyc",
@@ -70,6 +70,6 @@
 		}
 	},
 	"translate_tabs_to_spaces": true,
-	"trimTrailingWhiteSpaceOnSave": true,
+	"trim_trailing_white_space_on_save": true,
 	"use_tab_stops": true
 }
