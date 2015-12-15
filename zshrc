@@ -66,3 +66,10 @@ export PATH=~/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 # Useful when coupled with ssh_config LocalCommand feature
 # set_bg () { osascript -e "tell application \"Terminal\" to set background color of window 1 to $1" }
+
+# Disk usage in current dir
+# getdiskusage () {
+#   for i in $(find $PWD -maxdepth ${1:=1} -type d);
+#     do du -sh $i;
+#   done;
+# }

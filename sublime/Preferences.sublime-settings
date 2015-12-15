@@ -1,75 +1,72 @@
 {
-  // "theme": "Brogrammer.sublime-theme",
-  // "theme": "Soda Dark.sublime-theme",
-	// "color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
   "color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
-  "theme": "Spacegray.sublime-theme",
-	"detect_indentation": false,
-	"draw_white_space": "all",
-	"file_exclude_patterns":
-	[
-		"*.pyc",
-		"*.pyo",
-		"*.exe",
-		"*.dll",
-		"*.obj",
-		"*.o",
-		"*.a",
-		"*.lib",
-		"*.so",
-		"*.dylib",
-		"*.ncb",
-		"*.sdf",
-		"*.suo",
-		"*.pdb",
-		"*.idb",
-		".DS_Store",
-		"*.class",
-		"*.psd",
-		"*.db"
-	],
-	"folder_exclude_patterns":
-	[
-		"node_modules",
-		"tmp",
-		"log",
-		"coverage",
-		".svn",
-		".git",
-		".hg",
-		"CVS"
-	],
-	"font_size": 11.0,
-	"highlight_modified_tabs": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"matchBracketsAngle": true,
-	"matchBracketsBraces": true,
-	"matchBracketsSquare": true,
-	"rulers":
-	[
-		80
-	],
-	"show_minimap": false,
-	"tab_size": 2,
-	"todo":
-	{
-		"folder_exclude_patterns":
-		[
-			"vendor",
-			"tmp"
-		],
-		"patterns":
-		{
-			"CHANGED": "CHANGED[\\s]*?:+(?P<changed>\\S.*)$",
-			"FIXME": "FIX ?ME[\\s]*?:+(?P<fixme>\\S.*)$",
-			"NOTE": "NOTE[\\s]*?:+(?P<note>.*)$",
-			"TODO": "TODO(\\([^\\(\\)]*\\))?[\\s]*?:+(?P<todo>.*)$"
-		}
-	},
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"use_tab_stops": true
+  "detect_indentation": false,
+  "draw_white_space": "all",
+  "file_exclude_patterns":
+  [
+    "*.pyc",
+    "*.pyo",
+    "*.exe",
+    "*.dll",
+    "*.obj",
+    "*.o",
+    "*.a",
+    "*.lib",
+    "*.so",
+    "*.dylib",
+    "*.ncb",
+    "*.sdf",
+    "*.suo",
+    "*.pdb",
+    "*.idb",
+    ".DS_Store",
+    "*.class",
+    "*.psd",
+    "*.db"
+  ],
+  "folder_exclude_patterns":
+  [
+    "node_modules",
+    "tmp",
+    "log",
+    "coverage",
+    ".svn",
+    ".git",
+    ".hg",
+    "CVS"
+  ],
+  "font_size": 15.0,
+  "highlight_modified_tabs": true,
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "matchBracketsAngle": true,
+  "matchBracketsBraces": true,
+  "matchBracketsSquare": true,
+  "rulers":
+  [
+    80
+  ],
+  "show_minimap": false,
+  "tab_size": 2,
+  "theme": "Brogrammer.sublime-theme",
+  "todo":
+  {
+    "folder_exclude_patterns":
+    [
+      "vendor",
+      "tmp"
+    ],
+    "patterns":
+    {
+      "CHANGED": "CHANGED[\\s]*?:+(?P<changed>\\S.*)$",
+      "FIXME": "FIX ?ME[\\s]*?:+(?P<fixme>\\S.*)$",
+      "NOTE": "NOTE[\\s]*?:+(?P<note>.*)$",
+      "TODO": "TODO(\\([^\\(\\)]*\\))?[\\s]*?:+(?P<todo>.*)$"
+    }
+  },
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "use_tab_stops": true
 }
